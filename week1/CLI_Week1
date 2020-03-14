@@ -1,0 +1,18 @@
+1. How do I create a hidden file or folder? How do I display it in the CLI?
+
+1.1 touch . index.html 
+
+2.2 mkdir . css
+
+3.3 ls -a
+
+
+2. How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+ mkdir -p these/folders/are/just/for/fun
+
+3. How do I append a message to a file, without a newline character, so the output would be:
+
+ touch homework.txt
+ echo "first message" > homework.txt
+ echo "second message" >> homework.txt
