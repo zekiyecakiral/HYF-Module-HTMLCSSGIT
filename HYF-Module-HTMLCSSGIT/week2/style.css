@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Oxygen&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+
+    background: #f5f5f5;
+}
+header{
+    margin-top: 0;
+    margin-left: 10px;
+
+}
+h3{
+    font-family: 'PT Serif', serif;
+    padding: 10px;
+}
+h1{
+    text-align: left;
+    font-family: 'PT Serif', serif;
+    font-size: 3.8rem;
+    color: black;
+}
+h2{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+}
+ul {
+    max-width: 1200px;
+    margin: 1rem auto;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    list-style: none;
+}
+
+img {
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    background: #ffffff;
+    min-height: 440px;
+    margin: 1%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(105, 101, 101, 0.3);
+    transition: all 0.5s ease-in;
+    border-radius: 5px;
+}
+.grid-item:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.grid-item p {
+
+    font-family: 'Oxygen', sans-serif;
+    position: absolute;
+    padding: 10px;
+    bottom: 0px;
+
+}
+
+#grid-flex,
+#grid-floats{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+ 
+    .grid-item:nth-child(1) {
+        flex: 1 1 48%;
+   }
+   .grid-item:nth-child(2) {
+    flex: 1 1 48%;
+    }
+   .grid-item:nth-child(n + 3) {
+    flex: 1 1 31%;
+   }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid-item:nth-child(1) {
+        flex: 1 1 48%;
+   }
+   .grid-item:nth-child(n + 2) {
+         flex: 1 1 23%;
+         max-width: 23%;
+   }
+}
+
